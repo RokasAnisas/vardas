@@ -3,7 +3,7 @@ import linksnioKonvertavimas from './lib/linksnioKonvertavimas';
 
 export const vardas = (vardas: string): Vardas => {
   return {
-    linksnis: (linknsnis: Linksniai) => {
+    linksnis: (linknsnis: Linksniai): string => {
       return linksnioKonvertavimas(vardas, linknsnis);
     },
   };
