@@ -1,12 +1,8 @@
-// eslint-disable-next-line @typescript-eslint/no-var-requires
-const path = require('path');
-
 module.exports = {
   transform: {
-    // "^.+\\.(tsx?|jsx?)$": "ts-jest",
     '^.+\\.(ts?|js?)$': `<rootDir>/jest-configs/jest-preprocess.js`,
   },
-  testPathIgnorePatterns: [`node_modules`, `.cache`, `public`],
+  testPathIgnorePatterns: [`node_modules`, `.cache`, `public`, 'dist'],
   globals: {
     __PATH_PREFIX__: ``,
   },
