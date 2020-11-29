@@ -6,8 +6,8 @@
   "module": "./index.esm.js",
   "types": "./index.d.ts",
   "scripts": {
-    "build": "node scripts/clearBuild.js && rollup -c",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node scripts/clearBuild.js && rollup -c --watch",
+    "build": "node scripts/clearBuild.js && rollup -c"
   },
   "keywords": [
     "linksniai",
