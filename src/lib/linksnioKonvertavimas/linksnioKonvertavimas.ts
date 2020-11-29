@@ -6,7 +6,7 @@ import {
   vietininkas,
   įnagininkas,
   šauksmininkas,
-} from '../../constants/index';
+} from '../../constants';
 
 const linksnioKonvertavimas = (vardas: string, linksnis: Linksniai): string => {
   const linksnioGalūnės = (): Array<Galūnės> | null => {
