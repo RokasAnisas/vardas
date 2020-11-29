@@ -11,8 +11,8 @@ arba
 
 `yarn add vardas`
 
-## Development
+## Kūrimas
 
 1. `npm install`
 2. `npm run start`
-3. To test out the package, open `dist/` dir, run `yarn link` (npm link also works, but yarn is easier to setup here). Then open up another project, maybe a dummy project, and run `yarn link vardas`, this act as if vardas package was installed through npm, and you can test it out in real time.
+3. Kad pamatyti rezultatą gyvai, atsidarykite `dist/` direktoriją, joje paleiskite `yarn link` (npm link taipogi veikia, tačiau yarn link veikia paprasčiau). Tada atsidarykite kokį nors kitą projektą, ir paleiskite `yarn link vardas`, tai suveiks lyg būtumėt isirašę `vardas` biblioteką per npm, tik veiks lokaliai, iš `dist/` direktorijos.
