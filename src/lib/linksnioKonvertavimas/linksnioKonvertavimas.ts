@@ -1,5 +1,5 @@
-import { Galūnės, Linksniai } from '../types';
-import { galininkas, kilmininkas, naudininkas, vietininkas, įnagininkas, šauksmininkas } from '../constants/index';
+import { Galūnės, Linksniai } from '../../types';
+import { galininkas, kilmininkas, naudininkas, vietininkas, įnagininkas, šauksmininkas } from '../../constants/index';
 
 const linksnioKonvertavimas = (vardas: string, linksnis: Linksniai): string => {
 
