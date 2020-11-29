@@ -1,1 +1,8 @@
-export type Linksniai = 'vardininkas' | 'kilmininkas' | 'galininkas' | 'šauksmininkas';
+export type Linksniai =
+  | 'vardininkas'
+  | 'kilmininkas'
+  | 'naudininkas'
+  | 'galininkas'
+  | 'įnagininkas'
+  | 'vietininkas'
+  | 'šauksmininkas';
