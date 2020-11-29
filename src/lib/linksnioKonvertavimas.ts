@@ -1,17 +1,28 @@
 import { Galūnės, Linksniai } from '../types';
-import { kilmininkas } from '../constants/Kilmininkas.constant';
+import { galininkas, kilmininkas, naudininkas, vietininkas, įnagininkas, šauksmininkas } from '../constants/index';
 
 const linksnioKonvertavimas = (vardas: string, linksnis: Linksniai): string => {
-  const linksnioGalunes = () => {
+
+  const linksnioGalūnės = (): Array<Galūnės> | null  => {
     switch (linksnis) {
       case 'kilmininkas':
         return kilmininkas;
+      case 'galininkas':
+        return galininkas;
+      case 'naudininkas':
+        return naudininkas;
+      case 'įnagininkas':
+        return įnagininkas;
+      case 'šauksmininkas':
+        return šauksmininkas;
+      case 'vietininkas':
+        return vietininkas;
       default:
         return null;
     }
   };
 
-  const vardoLinksnioGalunės: Galūnės | undefined = linksnioGalunes()?.find(
+  const vardoLinksnioGalūnės: Galūnės | undefined = linksnioGalūnės()?.find(
     e => {
       if (vardas.substr(vardas.length - 3, 3) == e.vard) {
         return e;
@@ -25,17 +36,17 @@ const linksnioKonvertavimas = (vardas: string, linksnis: Linksniai): string => {
     }
   );
 
-  let islinksniuotasVardas: string;
-
-  if (vardoLinksnioGalunės) {
-    const galunesIlgis: number = vardoLinksnioGalunės.vard.length;
+  if (vardoLinksnioGalūnės) {
+    const galunesIlgis: number = vardoLinksnioGalūnės.vard.length;
     const vardasBeGalunes: string = vardas.substr(0, vardas.length - galunesIlgis);
-    islinksniuotasVardas = vardasBeGalunes.concat(vardoLinksnioGalunės.link);
+    const islinksniuotasVardas: string = vardasBeGalunes.concat(vardoLinksnioGalūnės.link);
+
+    return islinksniuotasVardas;
   } else {
-    islinksniuotasVardas = vardas;
+    // Vardo Kilmė ne Lietuviška
+    return vardas;
   }
 
-  return islinksniuotasVardas;
 };
 
 export default linksnioKonvertavimas;
