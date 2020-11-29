@@ -7,7 +7,8 @@
   "types": "./index.d.ts",
   "scripts": {
     "start": "node scripts/clearBuild.js && rollup -c --watch",
-    "build": "node scripts/clearBuild.js && rollup -c"
+    "build": "node scripts/clearBuild.js && rollup -c",
+    "lint": "eslint \"src/**/*.{js,ts,json,md}\""
   },
   "keywords": [
     "linksniai",
@@ -31,6 +32,11 @@
   },
   "devDependencies": {
     "@rollup/plugin-node-resolve": "^10.0.0",
+    "@typescript-eslint/eslint-plugin": "^4.8.2",
+    "@typescript-eslint/parser": "^4.8.2",
+    "eslint": "^7.14.0",
+    "eslint-config-prettier": "^6.15.0",
+    "eslint-plugin-prettier": "^3.1.4",
     "fs": "0.0.1-security",
     "path": "^0.12.7",
     "rollup": "^2.34.0",

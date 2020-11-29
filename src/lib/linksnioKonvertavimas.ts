@@ -1,6 +1,6 @@
 import { Linksniai } from '@/types';
 
-const linksnioKonvertavimas = (vardas: string, linksnis: Linksniai) => {
+const linksnioKonvertavimas = (vardas: string, linksnis: Linksniai): string => {
   return vardas + linksnis;
 }
 
