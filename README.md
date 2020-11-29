@@ -1,8 +1,5 @@
 # Vardas
 
-
-## About
-
 Biblioteka skirta paversti lietuviškus vardus iš vardininko linksnio į bet kurį kitą.
 https://www.npmjs.com/package/vardas
 
