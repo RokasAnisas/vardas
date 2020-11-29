@@ -18,6 +18,10 @@ jobs:
           node-version: 12
       - run: npm ci
       - run: npm run build
+      - uses: JS-DevTools/npm-publish@v1
+        with:
+          token: ${{ secrets.NPM_TOKEN }}
+          package_path: 'dist/'
 
   # publish-npm:
   #   needs: build
@@ -31,4 +35,4 @@ jobs:
   #     - run: npm run build
   #     - run: npm publish
   #       env:
-  #         NODE_AUTH_TOKEN: ${{secrets.npm_token}}
+  #         NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
