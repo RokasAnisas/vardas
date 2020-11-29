@@ -1,0 +1,10 @@
+const fs = require('fs');
+const path = require('path');
+
+fs.rmdirSync(
+  path.resolve(__dirname, '../dist/'),
+  { recursive: true },
+  function () {
+    process.exit(0);
+  }
+);
