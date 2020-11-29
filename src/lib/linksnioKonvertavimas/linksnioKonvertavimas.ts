@@ -29,13 +29,13 @@ const linksnioKonvertavimas = (vardas: string, linksnis: Linksniai): string => {
   };
 
   const vardoLinksnioGalūnės: Galūnės | undefined = linksnioGalūnės()?.find(
-    e => {
-      if (vardas.substr(vardas.length - 3, 3) == e.vard) {
-        return e;
-      } else if (vardas.substr(vardas.length - 2, 2) == e.vard) {
-        return e;
-      } else if (vardas.substr(vardas.length - 1, 1) == e.vard) {
-        return e;
+    galūnės => {
+      if (vardas.substr(vardas.length - 3, 3) == galūnės.vard) {
+        return galūnės;
+      } else if (vardas.substr(vardas.length - 2, 2) == galūnės.vard) {
+        return galūnės;
+      } else if (vardas.substr(vardas.length - 1, 1) == galūnės.vard) {
+        return galūnės;
       } else {
         return undefined;
       }
