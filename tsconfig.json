@@ -1,6 +1,9 @@
 {
   "compilerOptions": {
     "baseUrl": "./",
+    "paths": {
+      "@/*": ["./src/*"]
+    },
     "declaration": true,
     "declarationDir": "dist",
     "declarationMap": true,

@@ -30,6 +30,7 @@
     "url": "https://github.com/RokasAniss/vardas"
   },
   "devDependencies": {
+    "@rollup/plugin-node-resolve": "^10.0.0",
     "fs": "0.0.1-security",
     "path": "^0.12.7",
     "rollup": "^2.34.0",
