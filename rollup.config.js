@@ -3,7 +3,7 @@ import copy from 'rollup-plugin-copy';
 import resolve from '@rollup/plugin-node-resolve';
 import { terser } from 'rollup-plugin-terser';
 
-const packageJson = require('./package.json')
+const packageJson = require('./package.json');
 
 export default {
   input: 'src/index.ts',
@@ -20,7 +20,7 @@ export default {
     },
   ],
   plugins: [
-    resolve(),
+    resolve({ extensions: ['.ts', '.js'] }),
     copy({
       targets: [{ src: 'package.json', dest: 'dist' }],
     }),
