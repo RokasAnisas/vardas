@@ -15,7 +15,7 @@ export const šauksmininkas: Array<Galūnės> = [
   },
   {
     vard: 'is',
-    link: 'i'
+    link: 'i',
   },
   {
     vard: 'us',

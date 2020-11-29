@@ -1,4 +1,4 @@
 export interface Galūnės {
-    vard: string;
-    link: string;
-  }
+  vard: string;
+  link: string;
+}

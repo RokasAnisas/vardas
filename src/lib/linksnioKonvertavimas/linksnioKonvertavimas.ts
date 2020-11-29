@@ -1,9 +1,15 @@
 import { Galūnės, Linksniai } from '../../types';
-import { galininkas, kilmininkas, naudininkas, vietininkas, įnagininkas, šauksmininkas } from '../../constants/index';
+import {
+  galininkas,
+  kilmininkas,
+  naudininkas,
+  vietininkas,
+  įnagininkas,
+  šauksmininkas,
+} from '../../constants/index';
 
 const linksnioKonvertavimas = (vardas: string, linksnis: Linksniai): string => {
-
-  const linksnioGalūnės = (): Array<Galūnės> | null  => {
+  const linksnioGalūnės = (): Array<Galūnės> | null => {
     switch (linksnis) {
       case 'kilmininkas':
         return kilmininkas;
@@ -38,15 +44,19 @@ const linksnioKonvertavimas = (vardas: string, linksnis: Linksniai): string => {
 
   if (vardoLinksnioGalūnės) {
     const galunesIlgis: number = vardoLinksnioGalūnės.vard.length;
-    const vardasBeGalunes: string = vardas.substr(0, vardas.length - galunesIlgis);
-    const islinksniuotasVardas: string = vardasBeGalunes.concat(vardoLinksnioGalūnės.link);
+    const vardasBeGalunes: string = vardas.substr(
+      0,
+      vardas.length - galunesIlgis
+    );
+    const islinksniuotasVardas: string = vardasBeGalunes.concat(
+      vardoLinksnioGalūnės.link
+    );
 
     return islinksniuotasVardas;
   } else {
     // Vardo Kilmė ne Lietuviška
     return vardas;
   }
-
 };
 
 export default linksnioKonvertavimas;
