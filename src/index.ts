@@ -1,10 +1,14 @@
 import { Linksniai } from '@/types';
 import linksnioKonvertavimas from '@/lib/linksnioKonvertavimas';
 
-export const vardas = (vardas: string) => {
+export const vardas = (vardas: string): Vardas => {
   return {
     linksnis: (linknsnis: Linksniai) => {
       return linksnioKonvertavimas(vardas, linknsnis);
     }
   }
+}
+
+interface Vardas {
+  linksnis: (linksnis: Linksniai) => string;
 }
