@@ -22,7 +22,10 @@ export default {
   plugins: [
     resolve({ extensions: ['.ts', '.js'] }),
     copy({
-      targets: [{ src: 'package.json', dest: 'dist' }],
+      targets: [
+        { src: 'package.json', dest: 'dist' },
+        { src: 'README.md', dest: 'dist' },
+      ],
     }),
     typescript(),
     terser(),
