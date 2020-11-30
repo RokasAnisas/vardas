@@ -38,4 +38,11 @@ describe('linksnioKonvertavimas', () => {
 
     expect(result).toEqual(expectedResult);
   });
+
+  it('Turėtų grąžinti šauksmininko linksnyje', () => {
+    const expectedResult = ['Rokai', 'Mindaugai', 'Kamile', 'Nerijau', 'Kąstyti', 'Ina', 'Sauliau'];
+    const result = testVardai.map(vardas => linksnioKonvertavimas(vardas, 'šauksmininkas'));
+
+    expect(result).toEqual(expectedResult);
+  });
 });
