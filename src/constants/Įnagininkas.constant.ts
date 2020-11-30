@@ -3,7 +3,7 @@ import { Galūnės } from 'src/types';
 export const įnagininkas: Array<Galūnės> = [
   {
     vard: 'a',
-    link: 'os',
+    link: 'a',
   },
   {
     vard: 'as',
@@ -27,7 +27,7 @@ export const įnagininkas: Array<Galūnės> = [
   },
   {
     vard: 'us',
-    link: 'u',
+    link: 'umi',
   },
   {
     vard: 'tys',
