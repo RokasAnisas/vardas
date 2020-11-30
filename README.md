@@ -12,10 +12,12 @@ arba
 `yarn add vardas`
 
 ```
-import { vardas } from 'vardas';
+import { vardas } from 'vardas'; || const { vardas } = require('vardas');
+
 ...
+
 vardas('Rokas').linksnis('kilmininkas'); // Roko
-vardas('Mindaugas').linksnis('naudininkas'); // Mindaugo
+vardas('Mindaugas').linksnis('naudininkas'); // Mindaugui
 vardas('Kamilė').linksnis('galininkas'); // Kamilę
 vardas('Artūras').linksnis('įnagininkas'); // Artūru
 vardas('Ainis').linksnis('vietininkas'); // Ainyje
