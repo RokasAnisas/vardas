@@ -1,5 +1,5 @@
 import linksnioKonvertavimas from '../linksnioKonvertavimas';
-import { testiniaiVardai } from '../testiniaiVardai';
+import { testiniaiVardai } from '../mocks/testiniaiVardai';
 
 describe('linksnioKonvertavimas', () => {
   const testVardai = testiniaiVardai.map(vardoObj => vardoObj.var);
