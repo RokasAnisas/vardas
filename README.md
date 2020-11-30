@@ -1,6 +1,6 @@
 # Vardas
 
-Biblioteka skirta paversti lietuviškus vardus iš vardininko linksnio į bet kurį kitą.
+Biblioteka skirta paversti lietuviškus vardus iš vardininko linksnio į bet kurį kitą. Ši biblioteka taipogi turi pilną TypeScript palaikymą.
 https://www.npmjs.com/package/vardas
 
 ## Naudojimas
