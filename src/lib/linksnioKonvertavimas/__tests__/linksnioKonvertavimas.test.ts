@@ -12,7 +12,8 @@ describe('linksnioKonvertavimas', () => {
     'Alfreda',
     'Ainis',
     'Valys',
-    'Neivydis'
+    'Neivydis',
+    'Vacys'
   ];
 
   it('Turėtų grąžinti kilmininko linksnyje', () => {
@@ -27,7 +28,8 @@ describe('linksnioKonvertavimas', () => {
       'Alfredos',
       'Ainio',
       'Valio',
-      'Neivydžio'
+      'Neivydžio',
+      'Vacio'
     ];
     const result = testVardai.map(vardas =>
       linksnioKonvertavimas(vardas, 'kilmininkas')
@@ -48,7 +50,8 @@ describe('linksnioKonvertavimas', () => {
       'Alfredai',
       'Ainiui',
       'Valiui',
-      'Neivydžiui'
+      'Neivydžiui',
+      'Vaciui'
     ];
     const result = testVardai.map(vardas =>
       linksnioKonvertavimas(vardas, 'naudininkas')
@@ -69,7 +72,8 @@ describe('linksnioKonvertavimas', () => {
       'Alfredą',
       'Ainį',
       'Valį',
-      'Neivydį'
+      'Neivydį',
+      'Vacį'
     ];
     const result = testVardai.map(vardas =>
       linksnioKonvertavimas(vardas, 'galininkas')
@@ -90,7 +94,8 @@ describe('linksnioKonvertavimas', () => {
       'Alfreda',
       'Ainiu',
       'Valiu',
-      'Neivydžiu'
+      'Neivydžiu',
+      'Vaciu'
     ];
     const result = testVardai.map(vardas =>
       linksnioKonvertavimas(vardas, 'įnagininkas')
@@ -111,7 +116,8 @@ describe('linksnioKonvertavimas', () => {
       'Alfredoje',
       'Ainyje',
       'Valyje',
-      'Neivydyje'
+      'Neivydyje',
+      'Vacyje'
     ];
     const result = testVardai.map(vardas =>
       linksnioKonvertavimas(vardas, 'vietininkas')
@@ -132,7 +138,8 @@ describe('linksnioKonvertavimas', () => {
       'Alfreda',
       'Aini',
       'Valy',
-      'Neivydi'
+      'Neivydi',
+      'Vacy'
     ];
     const result = testVardai.map(vardas =>
       linksnioKonvertavimas(vardas, 'šauksmininkas')
