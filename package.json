@@ -1,6 +1,6 @@
 {
   "name": "vardas",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Javascript biblioteka, skirta keisti lietuviškų vardų linksnius",
   "main": "./index.js",
   "module": "./index.esm.js",
