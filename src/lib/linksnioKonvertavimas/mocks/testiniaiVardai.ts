@@ -106,7 +106,7 @@ export const testiniaiVardai: Array<TestVardai> = [
     įna: 'Domantu',
     vie: 'Domante',
     šau: 'Domantai',
-  }
+  },
 ];
 
 interface TestVardai {
