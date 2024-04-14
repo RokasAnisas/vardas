@@ -164,6 +164,15 @@ const vietoVardziai: Array<TestGroup> = [
     vie: 'Druskininkuose',
     šau: 'Druskininkai',
   },
+  {
+    var: 'Eišiškės',
+    kil: 'Eišiškių',
+    nau: 'Eišiškėms',
+    gal: 'Eišiškes',
+    įna: 'Eišiškėmis',
+    vie: 'Eišiškėse',
+    šau: 'Eišiškės',
+  },
 ];
 
 export const testiniaiScenarijai = [...vardai, ...vietoVardziai];

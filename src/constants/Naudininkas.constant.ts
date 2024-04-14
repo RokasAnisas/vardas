@@ -14,6 +14,10 @@ export const naudininkas: Array<Galūnės> = [
     link: 'ei',
   },
   {
+    vard: 'ės',
+    link: 'ėms',
+  },
+  {
     vard: 'tis',
     link: 'čiui',
   },
