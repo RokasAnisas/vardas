@@ -1,5 +1,6 @@
 import linksnioKonvertavimas from '../linksnioKonvertavimas';
-import { testiniaiScenarijai } from '../mocks/testiniaiVardai';
+import { testiniaiScenarijai } from '../mocks/testiniaiScenarijai';
+import { describe, it, expect } from '@jest/globals';
 
 describe('linksnioKonvertavimas', () => {
   const testVardai = testiniaiScenarijai.map(vardoObj => vardoObj.var);
@@ -7,7 +8,7 @@ describe('linksnioKonvertavimas', () => {
   it('Turėtų grąžinti kilmininko linksnyje', () => {
     const expectedResult = testiniaiScenarijai.map(vardoObj => vardoObj.kil);
     const result = testVardai.map(vardas =>
-      linksnioKonvertavimas(vardas, 'kilmininkas')
+      linksnioKonvertavimas(vardas, 'kilmininkas'),
     );
 
     expect(result).toEqual(expectedResult);
@@ -16,7 +17,7 @@ describe('linksnioKonvertavimas', () => {
   it('Turėtų grąžinti naudininko linksnyje', () => {
     const expectedResult = testiniaiScenarijai.map(vardoObj => vardoObj.nau);
     const result = testVardai.map(vardas =>
-      linksnioKonvertavimas(vardas, 'naudininkas')
+      linksnioKonvertavimas(vardas, 'naudininkas'),
     );
 
     expect(result).toEqual(expectedResult);
@@ -25,7 +26,7 @@ describe('linksnioKonvertavimas', () => {
   it('Turėtų grąžinti galininko linksnyje', () => {
     const expectedResult = testiniaiScenarijai.map(vardoObj => vardoObj.gal);
     const result = testVardai.map(vardas =>
-      linksnioKonvertavimas(vardas, 'galininkas')
+      linksnioKonvertavimas(vardas, 'galininkas'),
     );
 
     expect(result).toEqual(expectedResult);
@@ -34,7 +35,7 @@ describe('linksnioKonvertavimas', () => {
   it('Turėtų grąžinti įnagninko linksnyje', () => {
     const expectedResult = testiniaiScenarijai.map(vardoObj => vardoObj.įna);
     const result = testVardai.map(vardas =>
-      linksnioKonvertavimas(vardas, 'įnagininkas')
+      linksnioKonvertavimas(vardas, 'įnagininkas'),
     );
 
     expect(result).toEqual(expectedResult);
@@ -43,7 +44,7 @@ describe('linksnioKonvertavimas', () => {
   it('Turėtų grąžinti vietininko linksnyje', () => {
     const expectedResult = testiniaiScenarijai.map(vardoObj => vardoObj.vie);
     const result = testVardai.map(vardas =>
-      linksnioKonvertavimas(vardas, 'vietininkas')
+      linksnioKonvertavimas(vardas, 'vietininkas'),
     );
 
     expect(result).toEqual(expectedResult);
@@ -52,7 +53,7 @@ describe('linksnioKonvertavimas', () => {
   it('Turėtų grąžinti šauksmininko linksnyje', () => {
     const expectedResult = testiniaiScenarijai.map(vardoObj => vardoObj.šau);
     const result = testVardai.map(vardas =>
-      linksnioKonvertavimas(vardas, 'šauksmininkas')
+      linksnioKonvertavimas(vardas, 'šauksmininkas'),
     );
 
     expect(result).toEqual(expectedResult);

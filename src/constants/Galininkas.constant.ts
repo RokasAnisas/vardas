@@ -14,6 +14,10 @@ export const galininkas: Array<Galūnės> = [
     link: 'ę',
   },
   {
+    vard: 'ės',
+    link: 'es',
+  },
+  {
     vard: 'is',
     link: 'į',
   },
@@ -28,5 +32,13 @@ export const galininkas: Array<Galūnės> = [
   {
     vard: 'iai',
     link: 'ius',
+  },
+  {
+    vard: 'ai',
+    link: 'us',
+  },
+  {
+    vard: 'os',
+    link: 'as',
   },
 ];

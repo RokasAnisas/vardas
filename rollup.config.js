@@ -1,11 +1,11 @@
 import typescript from 'rollup-plugin-typescript2';
 import copy from 'rollup-plugin-copy';
 import resolve from '@rollup/plugin-node-resolve';
-import { terser } from 'rollup-plugin-terser';
+import terser from '@rollup/plugin-terser';
+import packageJson from './package.json' assert { type: 'json' };
+import { defineConfig } from 'rollup';
 
-const packageJson = require('./package.json');
-
-export default {
+const rollupConfig = defineConfig({
   input: 'src/index.ts',
   output: [
     {
@@ -30,4 +30,6 @@ export default {
     typescript(),
     terser(),
   ],
-};
+});
+
+export default rollupConfig;

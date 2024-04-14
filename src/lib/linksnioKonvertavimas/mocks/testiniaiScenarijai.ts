@@ -146,9 +146,88 @@ const vietoVardziai: Array<TestGroup> = [
     vie: 'Vilniuje',
     šau: 'Vilniau',
   },
+  {
+    var: 'Mažeikiai',
+    kil: 'Mažeikių',
+    nau: 'Mažeikiams',
+    gal: 'Mažeikius',
+    įna: 'Mažeikiais',
+    vie: 'Mažeikiuose',
+    šau: 'Mažeikiai',
+  },
+  {
+    var: 'Druskininkai',
+    kil: 'Druskininkų',
+    nau: 'Druskininkams',
+    gal: 'Druskininkus',
+    įna: 'Druskininkais',
+    vie: 'Druskininkuose',
+    šau: 'Druskininkai',
+  },
+  {
+    var: 'Eišiškės',
+    kil: 'Eišiškių',
+    nau: 'Eišiškėms',
+    gal: 'Eišiškes',
+    įna: 'Eišiškėmis',
+    vie: 'Eišiškėse',
+    šau: 'Eišiškės',
+  },
+  {
+    var: 'Dusetos',
+    kil: 'Dusetų',
+    nau: 'Dusetoms',
+    gal: 'Dusetas',
+    įna: 'Dusetomis',
+    vie: 'Dusetose',
+    šau: 'Dusetos',
+  },
+  {
+    var: 'Zarasai',
+    kil: 'Zarasų',
+    nau: 'Zarasams',
+    gal: 'Zarasus',
+    įna: 'Zarasais',
+    vie: 'Zarasuose',
+    šau: 'Zarasai',
+  },
+  {
+    var: 'Plungė',
+    kil: 'Plungės',
+    nau: 'Plungei',
+    gal: 'Plungę',
+    įna: 'Plunge',
+    vie: 'Plungėje',
+    šau: 'Plunge',
+  },
+  {
+    var: 'Lietuva',
+    kil: 'Lietuvos',
+    nau: 'Lietuvai',
+    gal: 'Lietuvą',
+    įna: 'Lietuva',
+    vie: 'Lietuvoje',
+    šau: 'Lietuva',
+  },
 ];
 
-export const testiniaiScenarijai = [...vardai, ...vietoVardziai];
+const kitiDaiktavardžiai: Array<TestGroup> = [
+  {
+    var: 'Konstitucija',
+    kil: 'Konstitucijos',
+    nau: 'Konstitucijai',
+    gal: 'Konstituciją',
+    įna: 'Konstitucija',
+    vie: 'Konstitucijoje',
+    šau: 'Konstitucija',
+  },
+];
+
+export const testiniaiScenarijai = [
+  ...vardai,
+  ...vietoVardziai,
+  ...kitiDaiktavardžiai,
+];
 
 interface TestGroup {
   var: string;
