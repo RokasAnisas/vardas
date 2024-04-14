@@ -1,11 +1,11 @@
 import linksnioKonvertavimas from '../linksnioKonvertavimas';
-import { testiniaiVardai } from '../mocks/testiniaiVardai';
+import { testiniaiScenarijai } from '../mocks/testiniaiVardai';
 
 describe('linksnioKonvertavimas', () => {
-  const testVardai = testiniaiVardai.map(vardoObj => vardoObj.var);
+  const testVardai = testiniaiScenarijai.map(vardoObj => vardoObj.var);
 
   it('Turėtų grąžinti kilmininko linksnyje', () => {
-    const expectedResult = testiniaiVardai.map(vardoObj => vardoObj.kil);
+    const expectedResult = testiniaiScenarijai.map(vardoObj => vardoObj.kil);
     const result = testVardai.map(vardas =>
       linksnioKonvertavimas(vardas, 'kilmininkas')
     );
@@ -14,7 +14,7 @@ describe('linksnioKonvertavimas', () => {
   });
 
   it('Turėtų grąžinti naudininko linksnyje', () => {
-    const expectedResult = testiniaiVardai.map(vardoObj => vardoObj.nau);
+    const expectedResult = testiniaiScenarijai.map(vardoObj => vardoObj.nau);
     const result = testVardai.map(vardas =>
       linksnioKonvertavimas(vardas, 'naudininkas')
     );
@@ -23,7 +23,7 @@ describe('linksnioKonvertavimas', () => {
   });
 
   it('Turėtų grąžinti galininko linksnyje', () => {
-    const expectedResult = testiniaiVardai.map(vardoObj => vardoObj.gal);
+    const expectedResult = testiniaiScenarijai.map(vardoObj => vardoObj.gal);
     const result = testVardai.map(vardas =>
       linksnioKonvertavimas(vardas, 'galininkas')
     );
@@ -32,7 +32,7 @@ describe('linksnioKonvertavimas', () => {
   });
 
   it('Turėtų grąžinti įnagninko linksnyje', () => {
-    const expectedResult = testiniaiVardai.map(vardoObj => vardoObj.įna);
+    const expectedResult = testiniaiScenarijai.map(vardoObj => vardoObj.įna);
     const result = testVardai.map(vardas =>
       linksnioKonvertavimas(vardas, 'įnagininkas')
     );
@@ -41,7 +41,7 @@ describe('linksnioKonvertavimas', () => {
   });
 
   it('Turėtų grąžinti vietininko linksnyje', () => {
-    const expectedResult = testiniaiVardai.map(vardoObj => vardoObj.vie);
+    const expectedResult = testiniaiScenarijai.map(vardoObj => vardoObj.vie);
     const result = testVardai.map(vardas =>
       linksnioKonvertavimas(vardas, 'vietininkas')
     );
@@ -50,7 +50,7 @@ describe('linksnioKonvertavimas', () => {
   });
 
   it('Turėtų grąžinti šauksmininko linksnyje', () => {
-    const expectedResult = testiniaiVardai.map(vardoObj => vardoObj.šau);
+    const expectedResult = testiniaiScenarijai.map(vardoObj => vardoObj.šau);
     const result = testVardai.map(vardas =>
       linksnioKonvertavimas(vardas, 'šauksmininkas')
     );

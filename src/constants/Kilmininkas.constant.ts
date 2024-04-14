@@ -41,4 +41,8 @@ export const kilmininkas: Array<Galūnės> = [
     vard: 'ys',
     link: 'io',
   },
+  {
+    vard: 'iai',
+    link: 'ių',
+  },
 ];

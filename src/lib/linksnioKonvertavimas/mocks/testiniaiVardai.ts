@@ -1,4 +1,4 @@
-export const testiniaiVardai: Array<TestVardai> = [
+const vardai: Array<TestGroup> = [
   {
     var: 'Rokas',
     kil: 'Roko',
@@ -107,9 +107,50 @@ export const testiniaiVardai: Array<TestVardai> = [
     vie: 'Domante',
     šau: 'Domantai',
   },
+  {
+    var: 'Vilius',
+    kil: 'Viliaus',
+    nau: 'Viliui',
+    gal: 'Vilių',
+    įna: 'Viliumi',
+    vie: 'Viliuje',
+    šau: 'Viliau',
+  },
 ];
 
-interface TestVardai {
+const vietoVardziai: Array<TestGroup> = [
+  {
+    var: 'Šiauliai',
+    kil: 'Šiaulių',
+    nau: 'Šiauliams',
+    gal: 'Šiaulius',
+    įna: 'Šiauliais',
+    vie: 'Šiauliuose',
+    šau: 'Šiauliai',
+  },
+  {
+    var: 'Kaunas',
+    kil: 'Kauno',
+    nau: 'Kaunui',
+    gal: 'Kauną',
+    įna: 'Kaunu',
+    vie: 'Kaune',
+    šau: 'Kaunai',
+  },
+  {
+    var: 'Vilnius',
+    kil: 'Vilniaus',
+    nau: 'Vilniui',
+    gal: 'Vilnių',
+    įna: 'Vilniumi',
+    vie: 'Vilniuje',
+    šau: 'Vilniau',
+  },
+];
+
+export const testiniaiScenarijai = [...vardai, ...vietoVardziai];
+
+interface TestGroup {
   var: string;
   kil: string;
   nau: string;
