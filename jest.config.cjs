@@ -1,6 +1,6 @@
 module.exports = {
   transform: {
-    '^.+\\.(ts?|js?)$': `<rootDir>/jest-configs/jest-preprocess.js`,
+    '^.+\\.(ts?|js?)$': `<rootDir>/jest-configs/jest-preprocess.cjs`,
   },
   testPathIgnorePatterns: [`node_modules`, `.cache`, `public`, 'dist'],
   globals: {
