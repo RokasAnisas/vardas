@@ -200,9 +200,34 @@ const vietoVardziai: Array<TestGroup> = [
     vie: 'Plungėje',
     šau: 'Plunge',
   },
+  {
+    var: 'Lietuva',
+    kil: 'Lietuvos',
+    nau: 'Lietuvai',
+    gal: 'Lietuvą',
+    įna: 'Lietuva',
+    vie: 'Lietuvoje',
+    šau: 'Lietuva',
+  },
 ];
 
-export const testiniaiScenarijai = [...vardai, ...vietoVardziai];
+const kitiDaiktavardžiai: Array<TestGroup> = [
+  {
+    var: 'Konstitucija',
+    kil: 'Konstitucijos',
+    nau: 'Konstitucijai',
+    gal: 'Konstituciją',
+    įna: 'Konstitucija',
+    vie: 'Konstitucijoje',
+    šau: 'Konstitucija',
+  },
+];
+
+export const testiniaiScenarijai = [
+  ...vardai,
+  ...vietoVardziai,
+  ...kitiDaiktavardžiai,
+];
 
 interface TestGroup {
   var: string;
