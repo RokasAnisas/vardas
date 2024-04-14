@@ -182,6 +182,15 @@ const vietoVardziai: Array<TestGroup> = [
     vie: 'Dusetose',
     šau: 'Dusetos',
   },
+  {
+    var: 'Zarasai',
+    kil: 'Zarasų',
+    nau: 'Zarasams',
+    gal: 'Zarasus',
+    įna: 'Zarasais',
+    vie: 'Zarasuose',
+    šau: 'Zarasai',
+  },
 ];
 
 export const testiniaiScenarijai = [...vardai, ...vietoVardziai];
