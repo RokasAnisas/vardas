@@ -29,4 +29,8 @@ export const galininkas: Array<Galūnės> = [
     vard: 'iai',
     link: 'ius',
   },
+  {
+    vard: 'ai',
+    link: 'us',
+  },
 ];
