@@ -37,4 +37,8 @@ export const vietininkas: Array<Galūnės> = [
     vard: 'ai',
     link: 'uose',
   },
+  {
+    vard: 'os',
+    link: 'ose',
+  },
 ];

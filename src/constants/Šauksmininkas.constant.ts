@@ -37,4 +37,8 @@ export const šauksmininkas: Array<Galūnės> = [
     vard: 'ai',
     link: 'ai',
   },
+  {
+    vard: 'os',
+    link: 'os',
+  },
 ];
