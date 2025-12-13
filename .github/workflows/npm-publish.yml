@@ -3,6 +3,9 @@ name: Node.js Package
 on:
   release:
     types: [published]
+  push:
+    branches:
+      - fix-deploy
 
 jobs:
   build:
@@ -17,10 +20,11 @@ jobs:
           node-version: 20
       - run: pnpm install
       - run: pnpm build
-      - uses: JS-DevTools/npm-publish@v1
+      - uses: JS-DevTools/npm-publish@v4
         with:
           token: ${{ secrets.NPM_TOKEN }}
           package: 'dist/package.json'
+          strategy: all
 
   # publish-npm:
   #   needs: build
