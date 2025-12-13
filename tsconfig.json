@@ -6,14 +6,16 @@
     "forceConsistentCasingInFileNames": true,
     "module": "esnext",
     "noImplicitAny": true,
-    "moduleResolution": "node",
+    "moduleResolution": "bundler",
     "outDir": "./dist/",
     "rootDir": "src",
     "sourceMap": true,
     "strict": true,
     "strictFunctionTypes": true,
     "strictNullChecks": true,
-    "target": "ES2015"
+    "target": "ES2020",
+    "lib": ["ES2020"],
+    "skipLibCheck": true
   },
   "include": ["src/**/*"],
   "exclude": ["node_modules", "src/**/__tests__", "src/**/mocks", "src/**/*.test.ts"]

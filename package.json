@@ -1,11 +1,24 @@
 {
   "name": "vardas",
-  "version": "1.1.3",
+  "version": "1.2.0",
   "description": "Javascript biblioteka, skirta keisti lietuviškų vardų linksnius",
-  "main": "./index.js",
-  "module": "./index.esm.js",
-  "types": "./index.d.ts",
   "type": "module",
+  "main": "./index.cjs",
+  "module": "./index.mjs",
+  "types": "./index.d.ts",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./index.d.ts",
+        "default": "./index.mjs"
+      },
+      "require": {
+        "types": "./index.d.ts",
+        "default": "./index.cjs"
+      }
+    }
+  },
+  "sideEffects": false,
   "scripts": {
     "start": "rollup -c --watch",
     "build": "rollup -c",
